@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ima.books — Algeria's Literary House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;900&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">ima<span class="dot">.</span>books</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#search-section">Search</a></li>
+    <li><a href="#categories">Categories</a></li>
+    <li><a href="#authors">Authors</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-icons">
+    <span class="icon">♡</span>
+    <span class="icon">◻</span>
+    <button class="nav-cta">Visit Us</button>
+  </div>
+  <button class="hamburger" id="hamburger">&#9776;</button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-menu" id="closeMenu">✕</button>
+  <ul>
+    <li><a href="#hero"           class="mob-link">Home</a></li>
+    <li><a href="#search-section" class="mob-link">Search</a></li>
+    <li><a href="#categories"     class="mob-link">Categories</a></li>
+    <li><a href="#authors"        class="mob-link">Authors</a></li>
+    <li><a href="#contact"        class="mob-link">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg-text">BOOKS</div>
+
+  <div class="hero-content">
+    <span class="hero-tag">Algeria's Premier Literary Destination</span>
+    <h1 class="hero-title">Every Great<br/><em>Story</em> Begins<br/>With a Page.</h1>
+    <p class="hero-sub">Curated collections across philosophy, fiction, history, and the human mind — delivered from the heart of Algeria.</p>
+    <div class="hero-btns">
+      <a href="#categories" class="btn-primary">Explore Collection</a>
+      <a href="#search-section" class="btn-ghost">Find a Book</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="book-stack">
+      <!--
+        ✏️ BOOK STACK IMAGES:
+        Replace each .b1–.b4 background in style.css with:
+        background: url('your-cover.jpg') center/cover;
+        Or add <img> tags inside each div below.
+      -->
+      <div class="book b1"> <img src="dorian.jpg" alt=""></div>
+      <div class="book b2"> <img src="cover-followship.jpg" alt=""></div>
+      <div class="book b3"> <img src="cover-emma.jpg" alt=""></div>
+      <div class="book b4"> <img src="cover-secret-history.jpg" alt=""></div>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-n">4 200+</span><span class="stat-l">Titles</span></div>
+    <div class="stat"><span class="stat-n">120+</span><span class="stat-l">Authors</span></div>
+    <div class="stat"><span class="stat-n">18</span><span class="stat-l">Categories</span></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SCULPTURE ATMOSPHERE STRIP
+     Inspired by: dark-marble / moonlight /
+     dramatic winged-statue catalogue UI.
+     See the reference image for the vibe.
+══════════════════════════════════════════ -->
+<section class="sculpture-strip">
+  <div class="sculpture-bg"></div>
+  <div class="sculpture-moon"></div>
+
+  <div class="sculpture-inner">
+
+    <!-- Left: heading -->
+    <div class="sculpture-text">
+      <span class="sculpture-eyebrow">The ima.books Catalogue</span>
+      <h2 class="sculpture-heading">
+        <strong>Literature</strong>
+        Where stories<br/>outlive empires.
+      </h2>
+      <p class="sculpture-desc">
+        From the philosophy of Camus to the dark academia of Donna Tartt —
+        every title in our collection is chosen to leave a mark.
+        <br/><br/>
+        <a href="#categories" style="color:var(--gold);border-bottom:1px solid rgba(200,169,110,.3);font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;">Browse the collection →</a>
+      </p>
+    </div>
+
+    
+    
+</section>
+
+<!-- ══════════════════════════════════════════
+     FEATURES BAR
+══════════════════════════════════════════ -->
+<section class="features-bar">
+  <div class="feature"><span class="feat-icon">✦</span><div><strong>Free Delivery</strong><p>Within Algiers on orders over 2 000 DZD</p></div></div>
+  <div class="feature"><span class="feat-icon">✦</span><div><strong>Curated Selection</strong><p>Hand-picked by our literary experts</p></div></div>
+  <div class="feature"><span class="feat-icon">✦</span><div><strong>Weekly Arrivals</strong><p>New titles every Thursday</p></div></div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SEARCH
+══════════════════════════════════════════ -->
+<section class="search-section" id="search-section">
+  <div class="search-inner">
+    <span class="section-tag">Catalogue Search</span>
+    <h2 class="section-title">Find Your Next <em>Obsession</em></h2>
+    <p class="section-sub">Search by title or author — we'll tell you if it's waiting on our shelves.</p>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="e.g. Crime and Punishment, Albert Camus…"/>
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="search-result" id="searchResult"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CATEGORIES
+══════════════════════════════════════════ -->
+<section class="categories" id="categories">
+  <div class="section-header">
+    <span class="section-tag">Collections</span>
+    <h2 class="section-title">Browse by <em>Category</em></h2>
+  </div>
+
+  <!-- ── 01 DARK ACADEMIA ── -->
+  <div class="cat-block" id="dark-academia">
+    <div class="cat-label-col">
+      <div class="cat-label">
+        <span class="cat-num">01</span>
+        <h3>Dark Academia</h3>
+        <p>Secrets, obsession, and the seduction of knowledge.</p>
+      </div>
+    </div>
+    <div class="books-grid">
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('secret-history.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-secret-history.jpg) center/cover">
+          <span class="book-cover-title">The Secret History</span>
+          <span class="book-cover-author">Donna Tartt</span>
+        </div>
+        <div class="book-info">
+          <h4>The Secret History</h4>
+          <p class="book-author">Donna Tartt</p>
+          <p class="book-desc">A murder among elite classics students unravels moral certainty and obsessive loyalty.</p>
+          <span class="book-price">1 850 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('villains.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-villains.jpg) center/cover">
+          <span class="book-cover-title">If We Were Villains</span>
+          <span class="book-cover-author">M.L. Rio</span>
+        </div>
+        <div class="book-info">
+          <h4>If We Were Villains</h4>
+          <p class="book-author">M.L. Rio</p>
+          <p class="book-desc">Seven Shakespeare students live their roles — until fiction bleeds into reality.</p>
+          <span class="book-price">1 700 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('ninth-house.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-ninth-house.jpg) center/cover">
+          <span class="book-cover-title">Ninth House</span>
+          <span class="book-cover-author">Leigh Bardugo</span>
+        </div>
+        <div class="book-info">
+          <h4>Ninth House</h4>
+          <p class="book-author">Leigh Bardugo</p>
+          <p class="book-desc">Yale's secret societies hide dark magic — one scholarship student holds the key.</p>
+          <span class="book-price">1 950 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('piranesi.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-piranesi.jpg) center/cover">
+          <span class="book-cover-title">Piranesi</span>
+          <span class="book-cover-author">Susanna Clarke</span>
+        </div>
+        <div class="book-info">
+          <h4>Piranesi</h4>
+          <p class="book-author">Susanna Clarke</p>
+          <p class="book-desc">A labyrinthine house with infinite halls harbours an impossible mystery.</p>
+          <span class="book-price">1 800 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('babel.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-babel.jpg) center/cover">
+          <span class="book-cover-title">Babel</span>
+          <span class="book-cover-author">R.F. Kuang</span>
+        </div>
+        <div class="book-info">
+          <h4>Babel</h4>
+          <p class="book-author">R.F. Kuang</p>
+          <p class="book-desc">Oxford's silver-working institute runs on translation — and empire.</p>
+          <span class="book-price">2 000 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('deadly-education.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-deadly-education.jpg) center/cover">
+          <span class="book-cover-title">A Deadly Education</span>
+          <span class="book-cover-author">Naomi Novik</span>
+        </div>
+        <div class="book-info">
+          <h4>A Deadly Education</h4>
+          <p class="book-author">Naomi Novik</p>
+          <p class="book-desc">A school for wizards where the monsters come for you — unless you're dark enough.</p>
+          <span class="book-price">1 750 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── 02 HUMAN BEHAVIOR ── -->
+  <div class="cat-block alt" id="human-behavior">
+    <div class="cat-label-col">
+      <div class="cat-label">
+        <span class="cat-num">02</span>
+        <h3>Human Behavior</h3>
+        <p>The science and art of understanding why we do what we do.</p>
+      </div>
+    </div>
+    <div class="books-grid">
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('laws-human-nature.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-laws-human-nature.jpg) center/cover">
+          <span class="book-cover-title">The Laws of Human Nature</span>
+          <span class="book-cover-author">Robert Greene</span>
+        </div>
+        <div class="book-info">
+          <h4>The Laws of Human Nature</h4>
+          <p class="book-author">Robert Greene</p>
+          <p class="book-desc">A comprehensive guide to mastering yourself and understanding others.</p>
+          <span class="book-price">2 200 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('thinking-fast-slow.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-thinking-fast-slow.jpg) center/cover">
+          <span class="book-cover-title">Thinking, Fast and Slow</span>
+          <span class="book-cover-author">Daniel Kahneman</span>
+        </div>
+        <div class="book-info">
+          <h4>Thinking, Fast and Slow</h4>
+          <p class="book-author">Daniel Kahneman</p>
+          <p class="book-desc">Nobel laureate's exploration of the two systems that shape our judgments.</p>
+          <span class="book-price">1 900 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('surrounded-idiots.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(idiots.jpg) center/cover">
+          <span class="book-cover-title">Surrounded by Idiots</span>
+          <span class="book-cover-author">Thomas Erikson</span>
+        </div>
+        <div class="book-info">
+          <h4>Surrounded by Idiots</h4>
+          <p class="book-author">Thomas Erikson</p>
+          <p class="book-desc">The four types of human behaviour and how to communicate effectively with each one.</p>
+          <span class="book-price">1 750 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('power-habit.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-power-habit.jpg) center/cover">
+          <span class="book-cover-title">The Power of Habit</span>
+          <span class="book-cover-author">Charles Duhigg</span>
+        </div>
+        <div class="book-info">
+          <h4>The Power of Habit</h4>
+          <p class="book-author">Charles Duhigg</p>
+          <p class="book-desc">Why we do what we do — and how to change it. The science of habit loops.</p>
+          <span class="book-price">1 650 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('games-people-play.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-games-people-play.jpg) center/cover">
+          <span class="book-cover-title">Games People Play</span>
+          <span class="book-cover-author">Eric Berne</span>
+        </div>
+        <div class="book-info">
+          <h4>Games People Play</h4>
+          <p class="book-author">Eric Berne, M.D.</p>
+          <p class="book-desc">The psychology of human relationships and the transactions we unknowingly play out.</p>
+          <span class="book-price">1 550 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('48-laws.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-48laws.jpg) center/cover">
+          <span class="book-cover-title">48 Laws of Power</span>
+          <span class="book-cover-author">Robert Greene</span>
+        </div>
+        <div class="book-info">
+          <h4>48 Laws of Power</h4>
+          <p class="book-author">Robert Greene</p>
+          <p class="book-desc">A ruthless guide to power and control drawn from the annals of history.</p>
+          <span class="book-price">2 000 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── 03 HIGH FANTASY ── -->
+  <div class="cat-block" id="high-fantasy">
+    <div class="cat-label-col">
+      <div class="cat-label">
+        <span class="cat-num">03</span>
+        <h3>High Fantasy</h3>
+        <p>Worlds vast enough to get lost in forever.</p>
+      </div>
+    </div>
+    <div class="books-grid">
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('lotr.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-fellowship.jpg) center/cover">
+          <span class="book-cover-title">The Fellowship of the Ring</span>
+          <span class="book-cover-author">J.R.R. Tolkien</span>
+        </div>
+        <div class="book-info">
+          <h4>The Fellowship of the Ring</h4>
+          <p class="book-author">J.R.R. Tolkien</p>
+          <p class="book-desc">The foundational epic of modern fantasy — a world unmatched in depth and wonder.</p>
+          <span class="book-price">1 900 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('mistborn.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-mistborn.jpg) center/cover">
+          <span class="book-cover-title">Mistborn</span>
+          <span class="book-cover-author">Brandon Sanderson</span>
+        </div>
+        <div class="book-info">
+          <h4>Mistborn: The Final Empire</h4>
+          <p class="book-author">Brandon Sanderson</p>
+          <p class="book-desc">A heist in a world where ash falls and the Lord Ruler reigns eternal.</p>
+          <span class="book-price">2 100 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('name-of-wind.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-name-of-wind.jpg) center/cover">
+          <span class="book-cover-title">The Name of the Wind</span>
+          <span class="book-cover-author">Patrick Rothfuss</span>
+        </div>
+        <div class="book-info">
+          <h4>The Name of the Wind</h4>
+          <p class="book-author">Patrick Rothfuss</p>
+          <p class="book-desc">The legend of Kvothe — hero, villain, musician, mage — told in his own words.</p>
+          <span class="book-price">2 000 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('game-of-thrones.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-game-of-thrones.jpg) center/cover">
+          <span class="book-cover-title">A Game of Thrones</span>
+          <span class="book-cover-author">George R.R. Martin</span>
+        </div>
+        <div class="book-info">
+          <h4>A Game of Thrones</h4>
+          <p class="book-author">George R.R. Martin</p>
+          <p class="book-desc">Seven kingdoms. Countless betrayals. Winter is always coming.</p>
+          <span class="book-price">2 300 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('fifth-season.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-fifth-season.jpg) center/cover">
+          <span class="book-cover-title">The Fifth Season</span>
+          <span class="book-cover-author">N.K. Jemisin</span>
+        </div>
+        <div class="book-info">
+          <h4>The Fifth Season</h4>
+          <p class="book-author">N.K. Jemisin</p>
+          <p class="book-desc">A world that ends every few centuries — one woman told in three timelines.</p>
+          <span class="book-price">1 950 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('assassins-apprentice.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-assassins-apprentice.jpg) center/cover">
+          <span class="book-cover-title">Assassin's Apprentice</span>
+          <span class="book-cover-author">Robin Hobb</span>
+        </div>
+        <div class="book-info">
+          <h4>Assassin's Apprentice</h4>
+          <p class="book-author">Robin Hobb</p>
+          <p class="book-desc">A royal bastard trained as a killer — intimate, heartbreaking high fantasy.</p>
+          <span class="book-price">1 800 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── 04 GREEK MYTHOLOGY ── -->
+  <div class="cat-block alt" id="greek-mythology">
+    <div class="cat-label-col">
+      <div class="cat-label">
+        <span class="cat-num">04</span>
+        <h3>Greek Mythology Retellings</h3>
+        <p>Ancient gods and heroes reimagined for modern hearts.</p>
+      </div>
+    </div>
+    <div class="books-grid">
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('song-of-achilles.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-song-achilles.jpg) center/cover">
+          <span class="book-cover-title">The Song of Achilles</span>
+          <span class="book-cover-author">Madeline Miller</span>
+        </div>
+        <div class="book-info">
+          <h4>The Song of Achilles</h4>
+          <p class="book-author">Madeline Miller</p>
+          <p class="book-desc">The Iliad retold through love — Patroclus and Achilles, fate and glory.</p>
+          <span class="book-price">1 800 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('circe.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-circe.jpg) center/cover">
+          <span class="book-cover-title">Circe</span>
+          <span class="book-cover-author">Madeline Miller</span>
+        </div>
+        <div class="book-info">
+          <h4>Circe</h4>
+          <p class="book-author">Madeline Miller</p>
+          <p class="book-desc">The witch-goddess of Aeaea claims her power in a world ruled by gods and men.</p>
+          <span class="book-price">1 900 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('ariadne.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-ariadne.jpg) center/cover">
+          <span class="book-cover-title">Ariadne</span>
+          <span class="book-cover-author">Jennifer Saint</span>
+        </div>
+        <div class="book-info">
+          <h4>Ariadne</h4>
+          <p class="book-author">Jennifer Saint</p>
+          <p class="book-desc">Two sisters, the labyrinth, and the cost of divine favour.</p>
+          <span class="book-price">1 700 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('stone-blind.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-stone-blind.jpg) center/cover">
+          <span class="book-cover-title">Stone Blind</span>
+          <span class="book-cover-author">Natalie Haynes</span>
+        </div>
+        <div class="book-info">
+          <h4>Stone Blind</h4>
+          <p class="book-author">Natalie Haynes</p>
+          <p class="book-desc">Medusa's story — from a mortal cursed by gods to a monster misunderstood by history.</p>
+          <span class="book-price">1 650 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('silence-girls.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-silence-girls.jpg) center/cover">
+          <span class="book-cover-title">The Silence of the Girls</span>
+          <span class="book-cover-author">Pat Barker</span>
+        </div>
+        <div class="book-info">
+          <h4>The Silence of the Girls</h4>
+          <p class="book-author">Pat Barker</p>
+          <p class="book-desc">Briseis speaks — the women behind the Trojan War find their voice at last.</p>
+          <span class="book-price">1 750 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('elektra.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-thousand-ships.jpg) center/cover">
+          <span class="book-cover-title">Elektra</span>
+          <span class="book-cover-author">Jennifer Saint</span>
+        </div>
+        <div class="book-info">
+          <h4>Elektra</h4>
+          <p class="book-author">Jennifer Saint</p>
+          <p class="book-desc">Troy's fall from three perspectives — Clytemnestra, Cassandra, and Elektra.</p>
+          <span class="book-price">1 700 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── 05 DARK PSYCHOLOGY ── -->
+  <div class="cat-block" id="dark-psychology">
+    <div class="cat-label-col">
+      <div class="cat-label">
+        <span class="cat-num">05</span>
+        <h3>Dark Psychology &amp; Influence</h3>
+        <p>The manipulation of minds — exposed and examined.</p>
+      </div>
+    </div>
+    <div class="books-grid">
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('influence.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(persuasion.jpg) center/cover">
+          <span class="book-cover-title">Influence</span>
+          <span class="book-cover-author">Robert B. Cialdini</span>
+        </div>
+        <div class="book-info">
+          <h4>Influence: The Psychology of Persuasion</h4>
+          <p class="book-author">Robert B. Cialdini</p>
+          <p class="book-desc">Six principles that govern why people say yes — and how to defend yourself.</p>
+          <span class="book-price">1 900 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+         style="background:url('tipping-point.jpg') center/cover" 
+        <div class="book-cover" style="background:url(cover-tipping-point.jpg) center/cover">
+          <span class="book-cover-title">The Tipping Point</span>
+          <span class="book-cover-author">Malcolm Gladwell</span>
+        </div>
+        <div class="book-info">
+          <h4>The Tipping Point</h4>
+          <p class="book-author">Malcolm Gladwell</p>
+          <p class="book-desc">How little things can make a massive difference — the anatomy of social epidemics.</p>
+          <span class="book-price">1 700 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('manufacturing-consent.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-manufacturing.jpg) center/cover">
+          <span class="book-cover-title">Manufacturing Consent</span>
+          <span class="book-cover-author">Chomsky &amp; Herman</span>
+        </div>
+        <div class="book-info">
+          <h4>Manufacturing Consent</h4>
+          <p class="book-author">Herman &amp; Chomsky</p>
+          <p class="book-desc">The political economy of the mass media — how public opinion is manufactured.</p>
+          <span class="book-price">2 000 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('man-his-symbols.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-man-symbols.jpg) center/cover">
+          <span class="book-cover-title">Man and His Symbols</span>
+          <span class="book-cover-author">Carl G. Jung</span>
+        </div>
+        <div class="book-info">
+          <h4>Man and His Symbols</h4>
+          <p class="book-author">Carl G. Jung</p>
+          <p class="book-desc">Jung's final work — the unconscious mind, dreams, and the symbols that shape us.</p>
+          <span class="book-price">1 800 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('propaganda.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(propaganda.jpg) center/cover">
+          <span class="book-cover-title">Propaganda</span>
+          <span class="book-cover-author">Jacques Ellul</span>
+        </div>
+        <div class="book-info">
+          <h4>Propaganda</h4>
+          <p class="book-author">Jacques Ellul</p>
+          <p class="book-desc">The formation of men's attitudes — propaganda as a total social phenomenon.</p>
+          <span class="book-price">1 850 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('trust-me-lying.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-trust-lying.jpg) center/cover">
+          <span class="book-cover-title">Trust Me, I'm Lying</span>
+          <span class="book-cover-author">Ryan Holiday</span>
+        </div>
+        <div class="book-info">
+          <h4>Trust Me, I'm Lying</h4>
+          <p class="book-author">Ryan Holiday</p>
+          <p class="book-desc">Confessions of a media manipulator — how the modern attention economy is gamed.</p>
+          <span class="book-price">1 750 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── 06 CLASSIC FICTION ── -->
+  <div class="cat-block alt" id="classic-fiction">
+    <div class="cat-label-col">
+      <div class="cat-label">
+        <span class="cat-num">06</span>
+        <h3>Classic Fiction</h3>
+        <p>The novels that defined literature — and still do.</p>
+      </div>
+    </div>
+    <div class="books-grid">
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('emma.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-emma.jpg) center/cover">
+          <span class="book-cover-title">Emma</span>
+          <span class="book-cover-author">Jane Austen</span>
+        </div>
+        <div class="book-info">
+          <h4>Emma</h4>
+          <p class="book-author">Jane Austen</p>
+          <p class="book-desc">A charming, misguided matchmaker learns the limits of her own perception.</p>
+          <span class="book-price">1 400 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('frankenstein.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(frank.jpg) center/cover">
+          <span class="book-cover-title">Frankenstein</span>
+          <span class="book-cover-author">Mary Shelley</span>
+        </div>
+        <div class="book-info">
+          <h4>Frankenstein</h4>
+          <p class="book-author">Mary Shelley</p>
+          <p class="book-desc">The first great science fiction novel — creation, rejection, and revenge.</p>
+          <span class="book-price">1 500 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('dorian-gray.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(dorian.jpg) center/cover">
+          <span class="book-cover-title">The Picture of Dorian Gray</span>
+          <span class="book-cover-author">Oscar Wilde</span>
+        </div>
+        <div class="book-info">
+          <h4>The Picture of Dorian Gray</h4>
+          <p class="book-author">Oscar Wilde</p>
+          <p class="book-desc">Beauty, corruption, and a portrait that ages in place of its vain owner.</p>
+          <span class="book-price">1 550 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="book-card fade-up">
+        <!-- ✏️ ADD COVER: style="background:url('sense-sensibility.jpg') center/cover" -->
+        <div class="book-cover" style="background:url(cover-sense-sensibility.jpg) center/cover">
+          <span class="book-cover-title">Sense and Sensibility</span>
+          <span class="book-cover-author">Jane Austen</span>
+        </div>
+        <div class="book-info">
+          <h4>Sense and Sensibility</h4>
+          <p class="book-author">Jane Austen</p>
+          <p class="book-desc">Two sisters, two temperaments — the eternal tension between feeling and reason.</p>
+          <span class="book-price">1 400 DZD</span><!-- ✏️ EDIT PRICE -->
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- /categories -->
+
+<!-- ══════════════════════════════════════════
+     AUTHORS
+══════════════════════════════════════════ -->
+<section class="authors-section" id="authors">
+  <div class="section-header">
+    <span class="section-tag">Literary Giants</span>
+    <h2 class="section-title">The <em>Authors</em></h2>
+    <p class="section-sub">Discover masters of literature and their essential works, all available at ima.books.</p>
+  </div>
+  <div class="authors-grid">
+
+    <!-- Albert Camus -->
+    <div class="author-card fade-up">
+      <!--
+        ✏️ AUTHOR PHOTO — Albert Camus:
+        style="background:url('camus.jpg') center/cover"
+        OR add <img src="camus.jpg" ...> inside the div
+      -->
+      <div class="author-portrait" style="background:url(author-camus.jpg) center/cover">
+      </div>
+      <div class="author-meta">
+        <span class="author-era">1913 – 1960 · Algeria / France</span>
+        <h3 class="author-name">Albert Camus</h3>
+        <p class="author-bio">Nobel Prize-winning Algerian-French philosopher and author. Founder of Absurdism — the tension between human desire for meaning and the universe's silence.</p>
+        <div class="author-works">
+          <span class="work-tag">The Stranger <em>1 600 DZD</em></span>
+          <span class="work-tag">The Plague <em>1 700 DZD</em></span>
+          <span class="work-tag">The Fall <em>1 550 DZD</em></span>
+          <span class="work-tag">The Myth of Sisyphus <em>1 400 DZD</em></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fyodor Dostoyevsky -->
+    <div class="author-card fade-up">
+      <!-- ✏️ AUTHOR PHOTO — Dostoyevsky: style="background:url('dostoevsky.jpg') center/cover" -->
+      <div class="author-portrait" style="background:url(dosto.jpg) center/cover">
+      </div>
+      <div class="author-meta">
+        <span class="author-era">1821 – 1881 · Russia</span>
+        <h3 class="author-name">Fyodor Dostoyevsky</h3>
+        <p class="author-bio">Master of psychological fiction exploring suffering, guilt, free will, and redemption. His novels plunge into the darkest corners of the human soul with unmatched intensity.</p>
+        <div class="author-works">
+          <span class="work-tag">Crime and Punishment <em>1 800 DZD</em></span>
+          <span class="work-tag">The Brothers Karamazov <em>2 200 DZD</em></span>
+          <span class="work-tag">The Idiot <em>1 750 DZD</em></span>
+          <span class="work-tag">Notes from Underground <em>1 400 DZD</em></span>
+          <span class="work-tag">The Gambler <em>1 500 DZD</em></span>
+          <span class="work-tag">Demons <em>1 850 DZD</em></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leo Tolstoy -->
+    <div class="author-card fade-up">
+      <!-- ✏️ AUTHOR PHOTO — Tolstoy: style="background:url('tolstoy.jpg') center/cover" -->
+      <div class="author-portrait" style="background:url(tolsto.jpg) center/cover">
+      </div>
+      <div class="author-meta">
+        <span class="author-era">1828 – 1910 · Russia</span>
+        <h3 class="author-name">Leo Tolstoy</h3>
+        <p class="author-bio">Author of two of literature's greatest monuments. Tolstoy depicted Russian society with epic scope while probing the deepest questions of morality and spiritual life.</p>
+        <div class="author-works">
+          <span class="work-tag">War and Peace <em>2 500 DZD</em></span>
+          <span class="work-tag">Anna Karenina <em>2 200 DZD</em></span>
+          <span class="work-tag">The Death of Ivan Ilyich <em>1 300 DZD</em></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Haruki Murakami -->
+    <div class="author-card fade-up">
+      <!-- ✏️ AUTHOR PHOTO — Murakami: style="background:url('murakami.jpg') center/cover" -->
+      <div class="author-portrait" style="background:url(author-murakami.jpg) center/cover">
+      </div>
+      <div class="author-meta">
+        <span class="author-era">1949 – present · Japan</span>
+        <h3 class="author-name">Haruki Murakami</h3>
+        <p class="author-bio">Japan's most globally beloved novelist. Murakami blends the mundane with the surreal — jazz, loneliness, magical realism, and the search for meaning through loss.</p>
+        <div class="author-works">
+          <span class="work-tag">Norwegian Wood <em>1 750 DZD</em></span>
+          <span class="work-tag">Kafka on the Shore <em>1 900 DZD</em></span>
+          <span class="work-tag">1Q84 <em>2 300 DZD</em></span>
+          <span class="work-tag">The Wind-Up Bird Chronicle <em>2 000 DZD</em></span>
+          <span class="work-tag">After Dark <em>1 600 DZD</em></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Franz Kafka -->
+    <div class="author-card fade-up">
+      <!-- ✏️ AUTHOR PHOTO — Kafka: style="background:url('kafka.jpg') center/cover" -->
+      <div class="author-portrait" style="background:url(author-kafka.jpg) center/cover">
+      </div>
+      <div class="author-meta">
+        <span class="author-era">1883 – 1924 · Bohemia</span>
+        <h3 class="author-name">Franz Kafka</h3>
+        <p class="author-bio">Father of existential dread in literature. Kafka's bureaucratic nightmares and metamorphic alienation gave the world an entirely new adjective: Kafkaesque.</p>
+        <div class="author-works">
+          <span class="work-tag">The Metamorphosis <em>1 200 DZD</em></span>
+          <span class="work-tag">The Trial <em>1 550 DZD</em></span>
+          <span class="work-tag">The Castle <em>1 600 DZD</em></span>
+          <span class="work-tag">In the Penal Colony <em>1 100 DZD</em></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gabriel García Márquez -->
+    <div class="author-card fade-up">
+      <!-- ✏️ AUTHOR PHOTO — Márquez: style="background:url('marquez.jpg') center/cover" -->
+      <div class="author-portrait" style="background:url(author-marquez.jpg) center/cover">
+      </div>
+      <div class="author-meta">
+        <span class="author-era">1927 – 2014 · Colombia</span>
+        <h3 class="author-name">Gabriel García Márquez</h3>
+        <p class="author-bio">Father of magical realism. Gabo's prose transforms Colombian landscapes into mythological territories where miracles and tragedies are equally inevitable.</p>
+        <div class="author-works">
+          <span class="work-tag">One Hundred Years of Solitude <em>2 000 DZD</em></span>
+          <span class="work-tag">Love in the Time of Cholera <em>1 850 DZD</em></span>
+          <span class="work-tag">Chronicle of a Death Foretold <em>1 300 DZD</em></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Friedrich Nietzsche -->
+    <div class="author-card fade-up">
+      <!-- ✏️ AUTHOR PHOTO — Nietzsche: style="background:url('nietzsche.jpg') center/cover" -->
+      <div class="author-portrait" style="background:url(author-nietzsche.jpg) center/cover">
+      </div>
+      <div class="author-meta">
+        <span class="author-era">1844 – 1900 · Germany</span>
+        <h3 class="author-name">Friedrich Nietzsche</h3>
+        <p class="author-bio">Philosopher who declared the death of God and the necessity of self-creation. His works challenge every comfortable assumption about morality, truth, and the will to power.</p>
+        <div class="author-works">
+          <span class="work-tag">Thus Spoke Zarathustra <em>1 600 DZD</em></span>
+          <span class="work-tag">Beyond Good and Evil <em>1 500 DZD</em></span>
+          <span class="work-tag">The Birth of Tragedy <em>1 350 DZD</em></span>
+          <span class="work-tag">On the Genealogy of Morality <em>1 450 DZD</em></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Virginia Woolf -->
+    <div class="author-card fade-up">
+      <!-- ✏️ AUTHOR PHOTO — Woolf: style="background:url('woolf.jpg') center/cover" -->
+      <div class="author-portrait" style="background:url(author-woolf.jpg) center/cover">
+      </div>
+      <div class="author-meta">
+        <span class="author-era">1882 – 1941 · England</span>
+        <h3 class="author-name">Virginia Woolf</h3>
+        <p class="author-bio">Pioneer of the stream-of-consciousness novel. Woolf captures interior experience with luminous precision — consciousness, time, and gender through an unforgettable voice.</p>
+        <div class="author-works">
+          <span class="work-tag">Mrs Dalloway <em>1 400 DZD</em></span>
+          <span class="work-tag">To the Lighthouse <em>1 450 DZD</em></span>
+          <span class="work-tag">Orlando <em>1 500 DZD</em></span>
+          <span class="work-tag">A Room of One's Own <em>1 200 DZD</em></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Colleen Hoover -->
+    <div class="author-card fade-up">
+      <!-- ✏️ AUTHOR PHOTO — Hoover: style="background:url('colleen-hoover.jpg') center/cover" -->
+      <div class="author-portrait" style="background:url(author-coho.jpg) center/cover;display:flex;align-items:center;justify-content:center">
+        <span class="author-initial" style="font-size:1.8rem">H</span>
+      </div>
+      <div class="author-meta">
+        <span class="author-era">1979 – present · United States</span>
+        <h3 class="author-name">Colleen Hoover</h3>
+        <p class="author-bio">The reigning queen of emotionally devastating contemporary romance. CoHo's novels blend raw vulnerability with deeply human relationships — impossible to put down, impossible to forget.</p>
+        <div class="author-works">
+          <span class="work-tag">It Ends with Us <em>1 650 DZD</em></span>
+          <span class="work-tag">Verity <em>1 700 DZD</em></span>
+          <span class="work-tag">Ugly Love <em>1 550 DZD</em></span>
+          <span class="work-tag">November 9 <em>1 600 DZD</em></span>
+          <span class="work-tag">Reminders of Him <em>1 650 DZD</em></span>
+          <span class="work-tag">Confess <em>1 500 DZD</em></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thomas Erikson -->
+    <div class="author-card fade-up">
+      <!-- ✏️ AUTHOR PHOTO — Erikson: style="background:url('thomas-erikson.jpg') center/cover" -->
+      <div class="author-portrait" style="background:url(author-erikson.jpg) center/cover;display:flex;align-items:center;justify-content:center">
+        <span class="author-initial" style="font-size:1.8rem">E</span>
+      </div>
+      <div class="author-meta">
+        <span class="author-era">1965 – present · Sweden</span>
+        <h3 class="author-name">Thomas Erikson</h3>
+        <p class="author-bio">Swedish behavioural expert and author of one of the most-read books on human communication. Erikson's DISC-based framework has helped millions understand why people behave so differently.</p>
+        <div class="author-works">
+          <span class="work-tag">Surrounded by Idiots <em>1 750 DZD</em></span>
+          <span class="work-tag">Surrounded by Narcissists <em>1 800 DZD</em></span>
+          <span class="work-tag">Surrounded by Bad Bosses <em>1 700 DZD</em></span>
+          <span class="work-tag">Surrounded by Setbacks <em>1 700 DZD</em></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     QUOTE BREAK
+══════════════════════════════════════════ -->
+<section class="quote-break">
+  <div class="quote-inner">
+    <span class="quote-mark">"</span>
+    <blockquote>A reader lives a thousand lives before he dies. The man who never reads lives only one.</blockquote>
+    <cite>— George R.R. Martin</cite>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════ -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="contact-text">
+      <span class="section-tag">Find Us</span>
+      <h2 class="section-title">Visit <em>ima.books</em></h2>
+      <p>We are located in the heart of oran. Come browse, stay a while, and leave with something that will change you.</p>
+      <div style="margin-top:1.5rem">
+        <div class="c-item"><span>✦</span><span>oran Centre, Algeria</span></div>
+        <div class="c-item"><span>✦</span><span>+213 (0) 21 XX XX XX</span></div>
+        <div class="c-item"><span>✦</span><span>contact@ima-books.dz</span></div>
+        <div class="c-item"><span>✦</span><span>Sat – Thu: 9 AM – 8 PM</span></div>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h3>Send a Message</h3>
+      <input type="text"  placeholder="Your Name"/>
+      <input type="email" placeholder="Email Address"/>
+      <textarea rows="5"  placeholder="Your message or book enquiry…"></textarea>
+      <button class="btn-primary">Send Message</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="nav-logo">ima<span class="dot">.</span>books</div>
+      <p>Algeria's premier literary destination — curating the world's greatest stories.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Categories</h4>
+      <a href="#dark-academia">Dark Academia</a>
+      <a href="#human-behavior">Human Behavior</a>
+      <a href="#high-fantasy">High Fantasy</a>
+      <a href="#greek-mythology">Greek Mythology</a>
+      <a href="#dark-psychology">Dark Psychology</a>
+      <a href="#classic-fiction">Classic Fiction</a>
+    </div>
+    <div class="footer-links">
+      <h4>Authors</h4>
+      <a href="#authors">Albert Camus</a>
+      <a href="#authors">Dostoyevsky</a>
+      <a href="#authors">Murakami</a>
+      <a href="#authors">Colleen Hoover</a>
+      <a href="#authors">Thomas Erikson</a>
+    </div>
+    <div class="footer-links">
+      <h4>Info</h4>
+      <a href="#contact">Contact</a>
+      <a href="#search-section">Search Catalogue</a>
+      <a href="#">Shipping Policy</a>
+      <a href="#">Returns</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 ima.books, Algiers. All rights reserved.</p>
+    <p>Crafted with love for literature.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
